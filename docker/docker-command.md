@@ -42,3 +42,16 @@ docker run -d --name rabbitmq --network ecommerce-network \
  ```
 
 ![images/img_1.png](images/img_1.png)
+
+
+### docker remove all exited containers
+```
+ docker rm $(docker ps --filter status=exited -q)
+ ```
+
+###Stop and Remove all Docker Container
+모든 컨테이너를 Stop 하고 Remove 하는 방법입니다.
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```

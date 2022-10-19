@@ -20,3 +20,8 @@ docker run \
 -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
 --cgroupns=host edowon0623/docker-server:m1 /usr/sbin/init
 ```
+
+```
+ssh root@localhost -p 10022
+P@ssw0rd
+```

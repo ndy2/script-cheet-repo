@@ -25,3 +25,8 @@ docker run \
 ssh root@localhost -p 10022
 P@ssw0rd
 ```
+
+```
+systemctl status docker
+systemctl start docker
+```

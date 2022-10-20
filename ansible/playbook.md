@@ -1,5 +1,4 @@
 ### ansible-playbook
 
-![image](https://user-images.githubusercontent.com/67302707/196912308-e136b392-8ac1-4fa7-90c1-baaece57d8c0.png)
-
+![image](https://user-images.githubusercontent.com/67302707/196912502-bf690001-e958-45b4-9f02-e6b161961f09.png)
 

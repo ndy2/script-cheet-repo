@@ -32,14 +32,16 @@ systemctl start docker
 ```
 
 ## MacOS silicon chip, m1)) Ansible 컨테이너 실행 명령어
+
 ```
-docker run \
+docker run --rm \
 --privileged -itd \
 --name ansible-server \
 -p 20022:22 -p 8081:8080 \
 -e container=docker \
--v /sys/fs/cgroup:/sys/fs/cgroup edowon0623/ansible-server:m1 /usr/sbin/init
-```
+-v /sys/fs/cgroup:/sys/fs/cgroup:rw \
+--cgroupns=host \
+edowon0623/ansible-server:m1 /usr/sbin/init
 
 ```
 ssh root@localhost -p 20022 (or docker exec -it ansible-server bash)

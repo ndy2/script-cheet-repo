@@ -42,6 +42,7 @@ docker run --rm \
 -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
 --cgroupns=host \
 edowon0623/ansible-server:m1 /usr/sbin/init
+```
 
 ```
 ssh root@localhost -p 20022 (or docker exec -it ansible-server bash)
